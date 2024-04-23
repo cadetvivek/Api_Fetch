@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 1.5em;
+    font-family: sans-serif;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+
+}
+img{
+    height: auto;
+    max-width: 100%;
+
+}
+
+.title{
+    font-size: 1.5rem;
+
+}
+#cards{
+    /* display: grid; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.card{
+   width: 48%;
+   box-shadow: 0 0 4px 3px rgb(51, 45, 45);
+   text-align: center;
+   padding: 1.5em;
+   margin-bottom: 2em;
+
+}
+
+.category,.price{
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+
+}
+
+.images{
+    width: 100%;
+}
+@media only screen and (min-width:300px) {
+    .card{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:600px) {
+    .card{
+        width: 30%;
+    }
+
+    @media only screen and (min-width:1000px) {
+        .card{
+            width: 22%;
+        }
+    }
+}
+
